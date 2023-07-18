@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css docs/index.css" />
+    <link rel="icon" href="../Images/LogoNav.png" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: true });
+    </script>
+    <title>Home — Bear Island</title>
+  </head>
+
+  <body>
+    <div class="root">
+      <header id="header">
+        <div class="nav">
+          <image class="navImage" src="../Images/LogoNav.png"></image>
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="containter" style="background-image: url(../Images/Island.png)">
+        <div class="contentTop">
+          <div class="LogoText">
+            <img
+              style="width: 384px; height: 180px"
+              src="../Images/LogoText.png"
+            />
+          </div>
+
+          <div class="contentText">
+            <p class="text-align-center">
+              Bear Island is an open world survival game. Build, explore, kill and survive in this challenging first person survival game.
+            </p>
+            <p><a class="downloadButton" href="download.html">Go To Download</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="gradient"></div>
+      <div class="article-content">
+        <div id="left">
+          <div class="card">
+            <h1>World</h1>
+            <p>
+              Enter a living, breathing island, where every tree and plant can be chopped down and every animal killed.
+            </p>
+          </div>
+          <div class="card">
+            <h1>Complete Player Freedom</h1>
+            <p>
+              Chop down trees to build a camp, or start a fire to keep warm. Scavenge food to keep yourself from starving. Craft a waterskin to collect water. <br><br>
+              Build a small shelter or a large ocean side log cabin. Lay traps and defenses to keep a safe perimeter from the bears.
+            </p>
+          </div>
+        </div>
+        <div id="right">
+          <div class="card">
+            <h1>Gameplay</h1>
+            <p>
+              Explore and build during the day. Stay comfy in you base at night. Craft weapons and tools. <br><br> 
+              Bunker down during the evening or fend off the elements.
+            </p>
+          </div>
+          <div class="card">
+            <h1>Fight or Hide</h1>
+            <p>
+              Use stealth to evade animals, or engage them directly with crude weapons built from sticks and stones.
+            </p>
+          </div>
+          <div class="card">
+            <h1>A New Type of open world experience</h1>
+            <p>
+              Defend yourself against the constant attacking of bears.
+              Play by yourself, or with up to 8 friends for the ultimate survival experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      ScrollReveal().reveal('.root', { delay: 10 });
+      ScrollReveal().reveal('.containter', { delay: 150 });
+      ScrollReveal().reveal('.article-content', { delay: 250 });
+      
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > window.innerHeight * 0.75 || document.documentElement.scrollTop > window.innerHeight * 0.75) {
+          document.getElementById("header").style.paddingTop = "0px";
+          document.getElementById("header").style.paddingBottom = "0px";
+          document.getElementById("header").style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8))'
+        } else {
+          document.getElementById("header").style.paddingTop = "20px";
+          document.getElementById("header").style.paddingBottom = "20px";
+          document.getElementById("header").style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))'
+        }
+      }
+    </script>
+  </body>
+</html>

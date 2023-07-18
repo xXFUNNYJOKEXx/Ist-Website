@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css docs/index.css" />
+    <link rel="icon" href="../Images/LogoNav.png" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Download — Bear Island</title>
+  </head>
+
+  <body>
+    <div class="root">
+      <header>
+        <div class="nav">
+          <image class="navImage" src="../Images/LogoNav.png"></image>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="download.html">Download</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="containter" style="background-image: url(../Images/DownloadImage.png)">
+        <div class="contentTop" style="padding: 60px 80px;">
+          <div class="contentText" style="padding-bottom: 120px;">
+            <p class="text-align-center">
+              <img src="../Images/DownloadText.png" style="width: 522px; height: 270px">
+            </p>
+            <p><a class="downloadButton" href="../Bear Island.zip" target="_blank">Download Now</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
+          document.getElementById("header").style.paddingTop = "0px";
+          document.getElementById("header").style.paddingBottom = "0px";
+          document.getElementById("header").style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8))'
+        } else {
+          document.getElementById("header").style.paddingTop = "20px";
+          document.getElementById("header").style.paddingBottom = "20px";
+          document.getElementById("header").style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))'
+        }
+      }
+
+      ScrollReveal().reveal('.root', { delay: 10 });
+    </script>
+  </body>
+</html>

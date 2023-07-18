@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css docs/index.css" />
+    <link rel="icon" href="../Images/LogoNav.png" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>About — Bear Island</title>
+  </head>
+
+  <body>
+    <div class="root">
+      <header>
+        <div class="nav">
+          <image class="navImage" src="../Images/LogoNav.png"></image>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="containter" style="background-image: url(../Images/AboutImage.png)">
+        <div class="contentTopAbout">
+          <div class="contentText">
+            <p class="text-align-center">
+              Bear Island is an idependantly developed game by Spencer. <br><br>
+              As a intermediate C# programmer with a focus on quality of gameplay and graphics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      ScrollReveal().reveal('.root', { delay: 10 });
+      
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
+          document.getElementById("header").style.paddingTop = "0px";
+          document.getElementById("header").style.paddingBottom = "0px";
+          document.getElementById("header").style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8))'
+        } else {
+          document.getElementById("header").style.paddingTop = "20px";
+          document.getElementById("header").style.paddingBottom = "20px";
+          document.getElementById("header").style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))'
+        }
+      }
+    </script>
+  </body>
+</html>
