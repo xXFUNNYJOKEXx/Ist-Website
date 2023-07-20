@@ -6,12 +6,15 @@
     <link rel="stylesheet" href="../Css docs/index.css" />
     <link rel="icon" href="../Images/LogoNav.png" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: true });
+    </script>
     <title>Contact — Bear Island</title>
   </head>
 
   <body>
     <div class="root">
-      <header>
+      <header id="header">
         <div class="nav">
           <image class="navImage" src="../Images/LogoNav.png"></image>
           <ul>
@@ -22,33 +25,45 @@
           </ul>
         </div>
       </header>
-      <div class="containter" style="background-image: url(../Images/ContactImage.png)">
+      <div class="container" style="background-image: url(../Images/ContactImage.png); height: 50vh;">
         <div class="contentTop">
-          <div class="contentText">
-            <p class="text-align-center">
-              
-            </p>
+          <div class="contentTextForm">
+            <h1 class="text-align-center" style="font-size: 52px;">
+              CONTACT
+            </h1>
           </div>
         </div>
+      </div>
+      <div class="gradient"></div>
+      <div class="article-content">
+        <div id="left">
+          <div class="card">
+            
+          </div>
+        </div>
+        <div id="right">
+          
       </div>
     </div>
 
     <script>
+      ScrollReveal().reveal('.root', { delay: 10 });
+      ScrollReveal().reveal('.container', { delay: 150 });
+      ScrollReveal().reveal('.article-content', { delay: 250 });
+      
       window.onscroll = function() {scrollFunction()};
       
       function scrollFunction() {
-        if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
+        if (document.body.scrollTop > window.innerHeight * 0.5 || document.documentElement.scrollTop > window.innerHeight * 0.5) {
           document.getElementById("header").style.paddingTop = "0px";
           document.getElementById("header").style.paddingBottom = "0px";
-          document.getElementById("header").style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8))'
+          document.getElementById("header").style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8))'
         } else {
           document.getElementById("header").style.paddingTop = "20px";
           document.getElementById("header").style.paddingBottom = "20px";
           document.getElementById("header").style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))'
         }
       }
-
-      ScrollReveal().reveal('.root', { delay: 10 });
     </script>
   </body>
 </html>
