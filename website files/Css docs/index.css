@@ -71,14 +71,14 @@ header:after {
 }
 
 @media only screen and (min-width: 720px) {
-  .containter {
+  .container {
     margin-bottom: auto;
     height: calc(100vh - 240px);
     padding: 120px;
   }
 }
 
-.containter {
+.container {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -233,4 +233,9 @@ header:after {
 
 .footer{
   text-align: center;
+}
+
+.contentTextForm{
+  font-size: 24px;
+  color: white;
 }
