@@ -82,15 +82,23 @@
           </div>
         </div>
       </div>
+      <div class="footer" style="padding-top: 50px;">
+        <footer>
+          <p>
+            © Copyright 2023-2023 All rights reserved. Developed by Spencer.
+          </p>
+        </footer>
+      </div>
     </div>
 
     <script>
       ScrollReveal().reveal('.root', { delay: 10 });
       ScrollReveal().reveal('.containter', { delay: 150 });
       ScrollReveal().reveal('.article-content', { delay: 250 });
+      ScrollReveal().reveal('.footer', { delay: 150 });
       
       window.onscroll = function() {scrollFunction()};
-      
+
       function scrollFunction() {
         if (document.body.scrollTop > window.innerHeight * 0.75 || document.documentElement.scrollTop > window.innerHeight * 0.75) {
           document.getElementById("header").style.paddingTop = "0px";

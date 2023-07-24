@@ -184,7 +184,7 @@ header:after {
 }
 
 .article-content{
-  height: 100vh;
+  height: 120vh;
 }
 
 #left{
@@ -229,4 +229,8 @@ header:after {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer{
+  text-align: center;
 }
