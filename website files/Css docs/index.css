@@ -239,3 +239,12 @@ header:after {
   font-size: 24px;
   color: white;
 }
+
+#form{
+  text-align: center;
+}
+
+#form label{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
