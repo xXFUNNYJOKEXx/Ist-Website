@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../Css docs/index.css" />
     <link rel="icon" href="../Images/LogoNav.png" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../JS/script.js"></script>
     <title>Download — Bear Island</title>
   </head>
 
@@ -33,6 +34,59 @@
         </div>
       </div>
       <div class="gradient"></div>
+      <div class="article-content">
+        <div class="table">
+          <h1 style="margin-left: 50px; margin-top: 50px; text-decoration-line: underline;">
+            SYSTEM REQUIREMENTS
+          </h1>
+          <table>
+            <tr>
+              <th>MINIMUM</th>
+            </tr>
+            <tr>
+              <td>OS: Windows 7</td>
+            </tr>
+            <tr>
+              <td>Processor: AMD Ryzen 3 3200G</td>
+            </tr>
+            <tr>
+              <td>Memory: 4 GB RAM</td>
+            </tr>
+            <tr>
+              <td>Graphics: Radeon RX 550 series</td>
+            </tr>
+            <tr>
+              <td>Storage: 2GB</td>
+            </tr>
+            <tr>
+              <td>Sound Card: DirectX®-compatible</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <th>RECOMMENDED</th>
+            </tr>
+            <tr>
+              <td>OS: Windows 10</td>
+            </tr>
+            <tr>
+              <td>Processor: AMD Ryzen 5 5600X 6-Core</td>
+            </tr>
+            <tr>
+              <td>Memory: 4 GB RAM</td>
+            </tr>
+            <tr>
+              <td>Graphics: Radeon RX 580 series</td>
+            </tr>
+            <tr>
+              <td>Storage: 2GB</td>
+            </tr>
+            <tr>
+              <td>Sound Card: DirectX®-compatible</td>
+            </tr>
+          </table>
+        </div>
+      </div>
       <div class="footer">
         <footer>
           <p>
@@ -41,25 +95,10 @@
         </footer>
       </div>
     </div>
-
     <script>
-      ScrollReveal().reveal('.footer', { delay: 150 });
-
-      window.onscroll = function() {scrollFunction()};
-      
-      function scrollFunction() {
-        if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
-          document.getElementById("header").style.paddingTop = "0px";
-          document.getElementById("header").style.paddingBottom = "0px";
-          document.getElementById("header").style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8))'
-        } else {
-          document.getElementById("header").style.paddingTop = "20px";
-          document.getElementById("header").style.paddingBottom = "20px";
-          document.getElementById("header").style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))'
-        }
-      }
-
-      ScrollReveal().reveal('.root', { delay: 10 });
+      ScrollReveal().reveal('.article-content', { delay: 10, origin: 'right', duration: 1000, distance:  '250px'});
+      ScrollReveal().reveal('.contentTop', { delay: 10, origin: 'top', duration: 1000, distance:  '250px'});
+      ScrollReveal().reveal('.footer', { delay: 10, origin: 'left', duration: 1000, distance:  '150px'});
     </script>
   </body>
 </html>

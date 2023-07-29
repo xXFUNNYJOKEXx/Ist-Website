@@ -6,15 +6,13 @@
     <link rel="stylesheet" href="../Css docs/index.css" />
     <link rel="icon" href="../Images/LogoNav.png" />
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      ScrollReveal({ reset: true });
-    </script>
+    <script src="../JS/script.js"></script>
     <title>Home — Bear Island</title>
   </head>
 
   <body>
     <div class="root">
-      <header id="header">
+      <header id="header" class="head">
         <div class="nav">
           <image class="navImage" src="../Images/LogoNav.png"></image>
           <ul>
@@ -38,7 +36,7 @@
             <p class="text-align-center">
               Bear Island is an open world survival game. Build, explore, kill and survive in this challenging first person survival game.
             </p>
-            <p><a class="downloadButton" href="download.html">Go To Download</a></p>
+            <p class="_downloadButton"><a class="downloadButton" href="download.html">Go To Download</a></p>
           </div>
         </div>
       </div>
@@ -82,6 +80,40 @@
           </div>
         </div>
       </div>
+      <div class="article-content">
+        <div class="trailer-container">
+          <h1 style="margin: 2vw;">
+            Trailers
+          </h1>
+          <div class="trailer-item">
+            <iframe src="https://www.youtube.com/embed/aBj24eQxRCM" allowfullscreen frameborder="0"></iframe>
+          </div>
+          <div class="trailer-item">
+            <iframe src="https://www.youtube.com/embed/5GyaARJCnV8" allowfullscreen frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="article-content">
+        <div class="screenshot-container">
+          <h1 style="margin: 2.5vw;">
+            ScreenShots
+          </h1>
+          <img src="../Screenshots/1.png" class="image">
+          <img src="../Screenshots/2.png" class="image">
+          <img src="../Screenshots/3.png" class="image">
+          <img src="../Screenshots/4.png" class="image">
+          <img src="../Screenshots/5.png" class="image">
+          <img src="../Screenshots/6.png" class="image">
+          <img src="../Screenshots/7.png" class="image">
+          <img src="../Screenshots/8.png" class="image">
+          <img src="../Screenshots/9.png" class="image">
+          <img src="../Screenshots/10.png" class="image">
+          <img src="../Screenshots/11.png" class="image">
+          <img src="../Screenshots/12.png" class="image">
+          <img src="../Screenshots/13.png" class="image">
+          <img src="../Screenshots/14.png" class="image">
+        </div>
+      </div>
       <div class="footer" style="padding-top: 50px;">
         <footer>
           <p>
@@ -90,26 +122,14 @@
         </footer>
       </div>
     </div>
-
     <script>
-      ScrollReveal().reveal('.root', { delay: 10 });
-      ScrollReveal().reveal('.container', { delay: 150 });
-      ScrollReveal().reveal('.article-content', { delay: 250 });
-      ScrollReveal().reveal('.footer', { delay: 150 });
-      
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        if (document.body.scrollTop > window.innerHeight * 0.75 || document.documentElement.scrollTop > window.innerHeight * 0.75) {
-          document.getElementById("header").style.paddingTop = "0px";
-          document.getElementById("header").style.paddingBottom = "0px";
-          document.getElementById("header").style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8))'
-        } else {
-          document.getElementById("header").style.paddingTop = "20px";
-          document.getElementById("header").style.paddingBottom = "20px";
-          document.getElementById("header").style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))'
-        }
-      }
+      ScrollReveal().reveal('.image', { delay: 10, origin: 'left', duration: 1000, distance:  '250px', interval: 150});
+      ScrollReveal().reveal('.trailer-item', { delay: 10, origin: 'left', duration: 1000, distance:  '250px', interval: 150});
+      ScrollReveal().reveal('.LogoText', { delay: 10, origin: 'top', duration: 1000, distance:  '250px', reset: true });
+      ScrollReveal().reveal('.text-align-center', { delay: 10, origin: 'left', duration: 1000, distance:  '250px', reset: true });
+      ScrollReveal().reveal('._downloadButton', { delay: 10, origin: 'bottom', duration: 1000, distance:  '250px', reset: true });
+      ScrollReveal().reveal('.card', { delay: 10, origin: 'bottom', duration: 1000, distance:  '250px'});
+      ScrollReveal().reveal('.footer', { delay: 10, origin: 'left', duration: 1000, distance:  '150px', reset: true});
     </script>
   </body>
 </html>

@@ -34,11 +34,11 @@ html, body {
   margin: 0;
 }
 
-p, h1{
+p, h1, h2{
   color: white;
 }
 
-h1{
+h1, h2{
   text-transform: uppercase;
 }
 
@@ -184,7 +184,7 @@ header:after {
 }
 
 .article-content{
-  height: 120vh;
+  height: fit-content;
 }
 
 #left{
@@ -235,16 +235,160 @@ header:after {
   text-align: center;
 }
 
-.contentTextForm{
-  font-size: 24px;
+#form{
+  text-align: center;
   color: white;
 }
 
-#form{
+#form input{
+  font-size: 24px;
+  background-color: transparent;
+  color: white;
+  border-width: 0;
+  height: 100%;
+}
+
+#form input::placeholder{
   text-align: center;
 }
 
-#form label{
-  padding-top: 32px;
-  padding-bottom: 32px;
+.formBackground{
+  margin: 25px;
+  background-color: #1d1d1d73;
+  border-radius: 5px;
+  height: 2.5em;
+}
+
+.formBackground input{
+  height: 100%;
+  width: 100%;
+}
+
+input:focus{
+  outline-color: rgb(255, 220, 0);
+}
+
+#issue{
+  height: 240px;
+}
+
+#issue textarea{
+  font-family: Poppins;
+  resize:none;
+  width: 100%;
+  font-size: 24px;
+  background-color: transparent;
+  color: white;
+  border-width: 0;
+  height: 100%;
+  outline-color: rgb(255, 220, 0);
+}
+
+#issue textarea::placeholder{
+  text-align: center;
+}
+
+#submit{
+  display: flex;
+  max-width: fit-content;
+  color: rgb(255, 220, 0);
+  background-image: initial;
+  background-color: transparent;
+  border: 2px solid rgb(255, 220, 0);
+  text-align: center;
+  padding: 7px 20px;
+  transition: color 150ms ease;
+}
+
+#submit input{
+  color: rgb(255, 220, 0);
+  font-size: clamp(0.75rem, 1.5vw, 1.5em);
+}
+
+#submit:hover{
+  background-color: rgb(141, 122, 0);
+  transition: 0.3s ease;
+}
+
+#submit:not(:hover){
+  transition: 0.3s ease;
+}
+
+#form a{
+  color: rgb(255, 220, 0);
+  transition: 0.3s ease;
+}
+
+#form a:hover{
+  color: rgb(141, 122, 0)
+}
+
+#sendMessage{
+  text-align: center;
+}
+
+#sendMessage a{
+  color: rgb(255, 220, 0);
+  transition: 0.3s ease;
+}
+
+#sendMessage a:hover{
+  color: rgb(141, 122, 0)
+}
+
+.trailer-container{
+  display: inline-block;
+}
+
+.trailer-item iframe{
+  width: 45vw;
+  height: 40vh;
+}
+
+.trailer-item{
+  margin: 2vw;
+  display: inline-block;
+  transition: ease 0.8s;
+}
+
+.screenshot-container{
+  display: inline-block;
+}
+
+.screenshot-container img{
+  margin: 2.5vw;
+  width: 25vw;
+}
+
+.table table{
+  display: inline-block;
+  margin: 50px;
+  border: 2px solid #3f3f3f;
+  border-radius: 6px;
+}
+
+.table{
+  margin: 50px;
+  transition: 0.8s ease;
+}
+
+table{
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  background: #3f3f3f;
+  transition: 0.8s ease;
+}
+
+table:hover{
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.6);
+}
+
+th{
+  font-size: 36px;
+  border-bottom: 1px solid #1d1d1d;
+}
+
+td{
+  font-size: 24px;
+  padding-bottom: 10px;
 }

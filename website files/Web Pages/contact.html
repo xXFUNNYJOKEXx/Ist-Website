@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../Css docs/index.css" />
     <link rel="icon" href="../Images/LogoNav.png" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../JS/script.js"></script>
     <script>
       ScrollReveal({ reset: true });
     </script>
@@ -34,7 +35,7 @@
           </div>
         </div>
       </div>
-      <div class="article-content">
+      <div class="article-content" style="height: 90vh;">
         
         <div id="left">
           <div class="card" id="form">
@@ -42,17 +43,50 @@
               Submit Issue
             </h1>
             <p>
+              Use the form below or send an email at <a href="">beltramispencer66540@gmail.com</a>
               <form>
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname">
+                <div class="formBackground">
+                  <input type="text" name="name" id="name" placeholder="Name" autocomplete="off">
+                </div>
+                <div class="formBackground">
+                  <input type="email" name="mail" id="edit-email" placeholder="Email" autocomplete="none">
+                </div>
+                <div class="formBackground" id="issue">
+                  <textarea type="text" name="enterIssue" id="enterIssue" placeholder="Enter issue" data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false" autocomplete="off"></textarea>
+                </div>
+
+                <div class="formBackground" id="submit">
+                  <input type="submit" value="Report Issue">
+                </div>
               </form>
             </p>
           </div>
         </div>
         <div id="right">
-      <div class="gradient"></div>
+          <div class="card" id="sendMessage">
+            <h1>
+              Send Message
+            </h1>
+            <p>
+              Send an email at <a href="">beltramispencer66540@gmail.com</a>
+            </p>
+            <h2>
+              Give Feedback
+            </h2>
+            <p>
+              Send your feedback to <a href="">beltramispencer66540@gmail.com</a> and I'll make sure to take your feedback into account.
+            </p>
+            <h2>
+              Dontate
+            </h2>
+            <p>
+              <img src="../Images/buymeacoffee.svg" height="64px"> <br>
+              Buy me a coffee to support regular updates and future gameplay.
+            </p>
+            <a href="" style="font-size: 24px;">DONATE</a>
+          </div>
+        </div>
+      </div>
       <div class="footer">
         <footer>
           <p>
@@ -61,27 +95,9 @@
         </footer>
       </div>
     </div>
-
     <script>
-      ScrollReveal().reveal('.footer', { delay: 150 });
-
-      ScrollReveal().reveal('.root', { delay: 10 });
-      ScrollReveal().reveal('.container', { delay: 150 });
-      ScrollReveal().reveal('.article-content', { delay: 250 });
-      
-      window.onscroll = function() {scrollFunction()};
-      
-      function scrollFunction() {
-        if (document.body.scrollTop > window.innerHeight * 0.5 || document.documentElement.scrollTop > window.innerHeight * 0.5) {
-          document.getElementById("header").style.paddingTop = "0px";
-          document.getElementById("header").style.paddingBottom = "0px";
-          document.getElementById("header").style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8))'
-        } else {
-          document.getElementById("header").style.paddingTop = "20px";
-          document.getElementById("header").style.paddingBottom = "20px";
-          document.getElementById("header").style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))'
-        }
-      }
+      ScrollReveal().reveal('.contentTop', { delay: 10, origin: 'top', duration: 1000, distance:  '250px', interval: 600, reset: true});
+      ScrollReveal().reveal('.footer', { delay: 10, origin: 'left', duration: 1000, distance:  '150px', reset: true});
     </script>
   </body>
 </html>

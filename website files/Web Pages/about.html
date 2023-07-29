@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../Css docs/index.css" />
     <link rel="icon" href="../Images/LogoNav.png" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../JS/script.js"></script>
     <title>About — Bear Island</title>
   </head>
 
@@ -41,24 +42,9 @@
         </footer>
       </div>
     </div>
-
     <script>
-      ScrollReveal().reveal('.root', { delay: 10 });
-      ScrollReveal().reveal('.footer', { delay: 150 });
-      
-      window.onscroll = function() {scrollFunction()};
-      
-      function scrollFunction() {
-        if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
-          document.getElementById("header").style.paddingTop = "0px";
-          document.getElementById("header").style.paddingBottom = "0px";
-          document.getElementById("header").style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8))'
-        } else {
-          document.getElementById("header").style.paddingTop = "20px";
-          document.getElementById("header").style.paddingBottom = "20px";
-          document.getElementById("header").style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))'
-        }
-      }
+      ScrollReveal().reveal('.contentTopAbout', { delay: 10, origin: 'top', duration: 1000, distance:  '250px'});
+      ScrollReveal().reveal('.footer', { delay: 10, origin: 'left', duration: 1000, distance:  '150px'});
     </script>
   </body>
 </html>
