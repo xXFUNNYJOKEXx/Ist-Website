@@ -6,7 +6,7 @@
 ::-webkit-scrollbar{
   height: 10px;
   width: 10px;
-  background-color: #414141;
+  background-color: var(--lighter-grey);
 }
 
 ::-webkit-scrollbar-thumb:hover{
@@ -15,21 +15,30 @@
 
 ::-webkit-scrollbar-thumb{
   border-radius: 6px;
-  background-color: #1d1d1d;
+  background-color: var(--darker-grey);
 }
 
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 
-html, body {
+:root {
+  --accent-color: rgb(255, 220, 0);
+  --dark-yellow: rgb(141, 122, 0);
+  --grey: #3f3f3f;
+  --dark-grey: #333;
+  --darker-grey: #1d1d1d;
+  --light-grey: #363636;
+  --lighter-grey: #414141;
+
+
+  font-family: Poppins;
+  background-color: var(--dark-grey);
   padding: 0;
   margin: 0;
 }
 
-:root {
-  font-family: Poppins;
-  background-color: #333;
+html, body {
   padding: 0;
   margin: 0;
 }
@@ -121,11 +130,11 @@ header:after {
 }
 
 .nav a:hover {
-  color: rgb(255, 220, 0);
+  color: var(--accent-color);
 }
 
 .nav a.active {
-  color: rgb(255, 220, 0);
+  color: var(--accent-color);
 }
 
 
@@ -153,10 +162,10 @@ header:after {
 
 .downloadButton{
   text-decoration: none;
-  color: rgb(255, 220, 0);
+  color: var(--accent-color);
   background-image: initial;
   background-color: transparent;
-  border: 2px solid rgb(255, 220, 0);
+  border: 2px solid var(--accent-color);
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
@@ -166,7 +175,7 @@ header:after {
 }
 
 .downloadButton:hover{
-  background-color: rgb(141, 122, 0);
+  background-color: var(--dark-yellow);
   transition: 0.8s ease;
 }
 
@@ -206,7 +215,7 @@ header:after {
 .card{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  background: #363636;
+  background: var(--grey);
   padding: 18px;
   border-radius: 8px;
   margin-bottom: 35px;
@@ -265,7 +274,7 @@ header:after {
 }
 
 input:focus{
-  outline-color: rgb(255, 220, 0);
+  outline-color: var(--accent-color);
 }
 
 #issue{
@@ -281,7 +290,7 @@ input:focus{
   color: white;
   border-width: 0;
   height: 100%;
-  outline-color: rgb(255, 220, 0);
+  outline-color: var(--accent-color);
 }
 
 #issue textarea::placeholder{
@@ -291,22 +300,22 @@ input:focus{
 #submit{
   display: flex;
   max-width: fit-content;
-  color: rgb(255, 220, 0);
+  color: var(--accent-color);
   background-image: initial;
   background-color: transparent;
-  border: 2px solid rgb(255, 220, 0);
+  border: 2px solid var(--accent-color);
   text-align: center;
   padding: 7px 20px;
   transition: color 150ms ease;
 }
 
 #submit input{
-  color: rgb(255, 220, 0);
+  color: var(--accent-color);
   font-size: clamp(0.75rem, 1.5vw, 1.5em);
 }
 
 #submit:hover{
-  background-color: rgb(141, 122, 0);
+  background-color: var(--dark-yellow);
   transition: 0.3s ease;
 }
 
@@ -315,12 +324,12 @@ input:focus{
 }
 
 #form a{
-  color: rgb(255, 220, 0);
+  color: var(--accent-color);
   transition: 0.3s ease;
 }
 
 #form a:hover{
-  color: rgb(141, 122, 0)
+  color: var(--dark-yellow);
 }
 
 #sendMessage{
@@ -328,12 +337,12 @@ input:focus{
 }
 
 #sendMessage a{
-  color: rgb(255, 220, 0);
+  color: var(--accent-color);
   transition: 0.3s ease;
 }
 
 #sendMessage a:hover{
-  color: rgb(141, 122, 0)
+  color: var(--dark-yellow);
 }
 
 .trailer-container{
@@ -363,7 +372,7 @@ input:focus{
 .table table{
   display: inline-block;
   margin: 50px;
-  border: 2px solid #3f3f3f;
+  border: 2px solid var(--grey);
   border-radius: 6px;
 }
 
@@ -375,7 +384,7 @@ input:focus{
 table{
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-  background: #3f3f3f;
+  background: var(--grey);
   transition: 0.8s ease;
 }
 
