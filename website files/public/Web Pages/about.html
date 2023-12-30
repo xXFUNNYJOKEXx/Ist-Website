@@ -42,6 +42,27 @@
         </footer>
       </div>
     </div>
+    <script type="module">
+
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js'
+
+      // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
+      import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js'
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyC9gMBRpdEcWb76NYgJX_yoyhUEoAN6q5Q",
+        authDomain: "bear-island-website.firebaseapp.com",
+        projectId: "bear-island-website",
+        storageBucket: "bear-island-website.appspot.com",
+        messagingSenderId: "486914832746",
+        appId: "1:486914832746:web:1aac65c29aec9602190d13",
+        measurementId: "G-NJG94PPPF7"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
     <script>
       ScrollReveal().reveal('.contentTopAbout', { delay: 10, origin: 'top', duration: 1000, distance:  '250px'});
       ScrollReveal().reveal('.footer', { delay: 10, origin: 'left', duration: 1000, distance:  '150px'});
